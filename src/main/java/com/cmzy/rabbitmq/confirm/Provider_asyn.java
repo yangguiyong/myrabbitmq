@@ -18,6 +18,7 @@ public class Provider_asyn {
 		channel.queueDeclare(QUEUE_NAME, false, false, false, null);
 		
 		channel.confirmSelect();
+
 		//存放发送消息的消息编号的代码
 		final SortedSet<Long> confirmSet = Collections.synchronizedSortedSet(new TreeSet<Long>());
 		
