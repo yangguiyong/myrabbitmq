@@ -19,7 +19,7 @@ public class Provider_asyn {
 		
 		channel.confirmSelect();
 
-		//存放发送消息的消息编号的代码
+		//存放发送消息的消息编号的代码在hotfix分支上
 		final SortedSet<Long> confirmSet = Collections.synchronizedSortedSet(new TreeSet<Long>());
 		
 		//添加channel的监听
